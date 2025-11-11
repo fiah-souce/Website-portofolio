@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project One</title>
+  <style>
+    :root{--bg:#0a0f1c;--card:#0f1724;--accent:#00b4ff;--muted:#9aa4b2}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#eef2f7}
+    .wrap{max-width:1000px;margin:48px auto;padding:28px}
+    a.back{color:var(--accent);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start}
+    .hero .content{padding:20px}
+    .hero h1{margin:0 0 8px 0}
+    .hero p.lead{color:var(--muted);margin:0}
+    .meta{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;margin-top:18px}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#6de0ff);color:#042033;text-decoration:none;font-weight:600}
+    @media(max-width:900px){.hero{grid-template-columns:1fr} .gallery img{height:160px}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="back" href="Depan.html">← Back to portfolio</a>
+    <a href="Depan.html"></a>
+</div>
+</nav>
+    <div class="hero">
+      <div class="content">
+        <h1>My Activity</h1>
+        <p class="lead">Banyak aktivitas yang kulakukan saat sendang ini contohnya.</p>
+        <h3 style="margin-top:22px">Project Details</h3>
+        <p>This section contains a longer description of the project: the challenge, approach, wireframes, technical decisions, and the final outcome. Write key takeaways and lessons learned here to mirror a polished case study like byalicelee.com.</p>
+      </div>
+
+      <aside>
+        <source src="video/ayang.mp4" type="video" alt="Project hero" style="width:100%;border-radius:12px;object-fit:cover">
+      </aside>
+    </div>
+
+    <div class="gallery">
+      <img src="image/Dr Stone.jpg" alt="Screen 1">
+      <img src="image/Senku Ishigami.jpg" alt="Screen 2">
+      <img src="image/ayang.jpg" alt="Screen 3">
+      <img src="image/ayang.jpg" alt="Screen 4">
+    </div>
+
+    <section id="live" style="margin-top:28px">
+      <h3>Live & Code</h3>
+      <p>Links to the live demo and the repository.</p>
+      <p><a class="btn" href="#" target="_blank">Open live site</a> <a style="margin-left:12px;color:var(--muted)" href="#" target="_blank">View on GitHub</a></p>
+    </section>
+  </div>
+</body>
+</html>
